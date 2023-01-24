@@ -295,5 +295,18 @@
             </div>
         </div>
     </section>
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-98px";
+        }
+        prevScrollpos = currentScrollPos;
+        }
+    </script>
 </body>
 </html>
