@@ -61,7 +61,6 @@
             float: right;
             display: flex;
             align-items: stretch;
-            margin-left: 75px;
         }
         nav ol li {
             display: inline-block;
@@ -77,13 +76,13 @@
             top: 33px;
             border: 1px solid #B6B6B6;
             border-radius: 18px;
-            margin-top: 15px;
+            margin-top: 10px;
         }
         ::placeholder{
             
             position: absolute; 
             left: 20px;
-            top: 10px;
+            top: 9px;
             font-family: 'Nunito Sans';
             font-style: normal;
             font-weight: 400;
@@ -96,7 +95,7 @@
             width: 16px;
             height: 16px;
             left: 1818px;
-            top: 59px;
+            top: 54px;
             color: #9B9B9B;
         }
         .header-banner{
@@ -166,6 +165,8 @@
         }
         img{
             max-height: 100%;
+            object-fit: cover;
+            display: block;
         }
         .card-text{
             max-height: 100%;
@@ -187,15 +188,15 @@
             <nav>
                 <div class="flex">
                     <div class="col-1-1">
-                        <img src="https://s3-alpha-sig.figma.com/img/d1b2/c573/e1c00ba2b83c2956d01549c4d0eeeecb?Expires=1675641600&Signature=XLLvrcjAa4udI873wOIa~lZU7qY5bWXAoUdxkn15-vA0gX5EwyB7qV4Se30gdwAKtfrdTfHVbD8uQ1BqrqVRoZLJgN0O8~G0QZwdm92Hk~qL9VBFJXVWIklS1mZL0DVsdo~e7Pwnea-8hVcxXDXj8iCponVNQ5iz0wNLTRWujThG3ptI0tQA437kibW9RwE3ThhI568KdkSRulGvmTUaYlVP5-NaaCPOe87EzPXo8G3qopq-gr9tFITZR88YQ2uQdDFtcUDECY2zpjiBW5uFwKg8Use3N2bAFcLcBTtb3qrXbDqzcyODTx0WHKME26xVgYm8gOkFPNmpBYPCLy5bVg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" width="138" height="70" alt="Logo">
+                        <img src="https://s3-alpha-sig.figma.com/img/2ef7/0eb2/2a7b3c3478e90e10b033af7236b200e0?Expires=1675641600&Signature=WKAJGBq5N6rGx~S-FQ4DP~N2tRecZfNWlV2y~i6lxK5EwIesf5Mj6OH4eIXLm1dCF5yKksNxlSNdu1skzYUULZBzvFW1nxdvs~Vp7mhPyvWdhtxZO3lOLev-abTTxYJe9xgb9n4ckcwo3NtLqP0FU6pM582-BrmZzpRqpTAyfquWBnUgE~~6raKU6c0f0N-42voEJTLsUoaYqwX9-5j-1CXqDvN9aMAtTuMFdYkuo0rhzDf5EdoOZiL9hXMfA5Qt-z04cbwPmifvLfIl9iLUdsuZHZ5vNGZ3PejwekZUQo11QJE1BjdnvOOLkNkpeETmKjEUhXT-wvmDvknTfhDk6g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" width="202" height="54" alt="Logo">
                     </div>
                     <div class="col-1-1 navbar" id="myTopnav">  
                         <ol class="topnav">
                             <li><a class="link link-1" href="#" title="FEATURES">Home</a></li>
-                            <li><a href="#" class="link" title="WORKS">About Us</a></li>
-                            <li><a href="#" class="link" title="OUR TEAM">Services</a></li>
-                            <li><a href="#" class="link" title="TESTIMONIALS">Contact</a></li>
-                            <li><a href="#" class="link" title="DOWNLOAD">Help</a></li>
+                            <li><a href="#" class="link" title="WORKS">Html</a></li>
+                            <li><a href="#" class="link" title="OUR TEAM">Css</a></li>
+                            <li><a href="#" class="link" title="TESTIMONIALS">Layout</a></li>
+                            <li><a href="#" class="link" title="DOWNLOAD">Bootstrap</a></li>
                         </ol>
                     </div>
                     <div class="col-1-1">
@@ -308,7 +309,7 @@
         if (prevScrollpos > currentScrollPos) {
             document.getElementById("navbar").style.top = "0";
         } else {
-            document.getElementById("navbar").style.top = "-105px";
+            document.getElementById("navbar").style.top = "-98px";
         }
         prevScrollpos = currentScrollPos;
         }
