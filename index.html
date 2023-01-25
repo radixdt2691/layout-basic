@@ -52,6 +52,12 @@
         .nav{
             width: 100%;
         }
+        .col-1{
+            display: flex;
+            position: relative;
+            justify-content: end;
+            width: 50%;
+        }
         .col-1-1 {
             padding: 15px 13px;
         }
@@ -69,21 +75,12 @@
             display: flex;
             align-items: stretch;
         }
-        input[type=text]{
-            position: absolute;
-            width: 521px;
-            height: 36px;
-            left: 1319px;
-            top: 20px;
-            border: 1px solid #B6B6B6;
-            border-radius: 18px;
-            padding: 0px 10px 0px 10px;
-        }
+        
         ::placeholder{
             
             position: absolute; 
-            left: 10px;
-            top: 8px;
+            left: 19px;
+            top: 7px;
             font-family: 'Nunito Sans';
             font-style: normal;
             font-weight: 400;
@@ -93,10 +90,8 @@
         }
         .icon{
             position: absolute; 
-            width: 16px;
-            height: 16px;
-            left: 1838px;
-            top: 30px;
+            left: 925px;
+            top: 10px;
             color: #9B9B9B;
         }
         .header-banner{
@@ -164,6 +159,9 @@
             line-height: 30px;
             color: #000000;
         }
+        .w-50{
+            width: 50%;
+        }
         img{
             max-height: 100%;
             object-fit: cover;
@@ -204,8 +202,11 @@
                             <li><a href="#" class="link" title="Bootstrap">Bootstrap</a></li>
                         </ol>
                     </div>
-                    <div class="col-1-1">
-                        <input type="text" placeholder="Enter keyword, Item # or Part #"><i class="fa fa-search icon" aria-hidden="true"></i>
+                    <div class="col-1">
+                        <input class="w-50" type="text" placeholder="Enter keyword, Item # or Part #" style=" border: 1px solid #B6B6B6;
+                        border-radius: 18px;
+                        padding: 10px 45px 10px 20px;">
+                        <i class="fa fa-search icon" aria-hidden="true"></i>
                     </div>
                 </div>
                
