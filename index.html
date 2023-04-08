@@ -1,331 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout tutorial</title>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.0.0/css/font-awesome.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
-    <style>
-        @font-face {
-            font-family: "Nunito Sans";
-            src: url(./font/AnyConv.com__NunitoSans-Regular.woff);
-        }
-        .container {
-            max-width: 1920px;
-            margin: 0 auto;
-        }
-        .flex{
-            display: flex;
-            align-items: center;
-        }
-        .d-flex{
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .main-nav{
-            width: 100%;
-            position: fixed;
-            top: 0%;
-            left: 0;
-            background: white;
-        }
-        .link{
-            font-family: 'Arial';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 23px;
-            text-decoration: none;
-            color: #000000;
-            
-        }
-        .link-1{
-            text-decoration: underline;
-            color: #FF0000;
-        }
-        .nav{
-            width: 100%;
-        }
-        .col-1{
-            display: flex;
-            position: relative;
-            justify-content: end;
-            width: 50%;
-        }
-        .col-1-1 {
-            padding: 15px 13px;
-        }
-        .col-2{
-            width: calc(100%/2);
-        }
-        nav ol {
-            float: right;
-            display: flex;
-            align-items: stretch;
-        }
-        nav ol li {
-            display: inline-block;
-            margin: 0 35px;
-            display: flex;
-            align-items: stretch;
-        }
-        
-        ::placeholder{
-            
-            position: absolute; 
-            left: 19px;
-            top: 7px;
-            font-family: 'Nunito Sans';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 16px;
-            color: #9B9B9B;
-        }
-        .icon{
-            position: absolute; 
-            left: 925px;
-            top: 10px;
-            color: #9B9B9B;
-        }
-        .header-banner{
-            margin-top: 110px;
-        }
-        .main-heading{
-            font-family: 'Arial';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 48px;
-            line-height: 40px;
-            color: #414141;
-            text-align: center;
-        }
-        .para{
-            font-family: 'Arial';
-            font-style: normal;
-            font-size: 20px;
-            line-height: 40px;
-            text-align: center;
-            color: #414141;
-            margin-top: 50px;
-        }
-        .main-heading-2{
-            font-family: 'Arial';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 40px;
-            line-height: 40px;
-            text-align: center;
-            color: #414141;
-        }
-        .inner-list{
-            font-family: 'Arial';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 23px;
-            color: #FF0000;
-            
-        }
-        .inner-list-1{
-            font-family: 'Arial';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 30px;
-            color: #414141;
-            padding: 20px;
-            width: 500px;
-        }
-        .inside-heading-card{
-            font-family: 'Arial';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 32px;
-            line-height: 30px;
-            color: #000000;
-        }
-        .inside-para-card{
-            font-family: 'Arial';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 30px;
-            color: #000000;
-        }
-        .w-50{
-            width: 50%;
-        }
-        img{
-            max-height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-        .card-text{
-            max-height: 100%;
-            margin-left: 40px;
-        }
-        .card-text-1{
-            max-height: 100%;
-        }
-        .footer{
-            background: #F9F9F9;
-            width: 1895px;
-            height: 120px;
-        }
-    </style>
-</head>
-<body vlink="#FF0000">
-    <header class="main-nav" id="navbar">
-        <div class="container">
-            <nav>
-                <div class="flex">
-                    <div class="col-1-1">
-                        <a href="#" title="Home"><img src="assets/images/logo.png" width="202" height="54" alt="Logo"></a>
-                    </div>
-                    <div class="col-1-1 navbar" id="myTopnav">  
-                        <ol class="topnav">
-                            <li><a href="#" style=" font-family: 'Arial';
-                                font-style: normal;
-                                font-weight: 400;
-                                font-size: 20px;
-                                line-height: 23px;" title="Home">Home</a></li>
-                            <li><a href="#" class="link" title="Html">Html</a></li>
-                            <li><a href="#" class="link" title="Css">Css</a></li>
-                            <li><a href="#" class="link" title="Layout">Layout</a></li>
-                            <li><a href="#" class="link" title="Bootstrap">Bootstrap</a></li>
-                        </ol>
-                    </div>
-                    <div class="col-1">
-                        <input class="w-50" type="text" placeholder="Enter keyword, Item # or Part #" style=" border: 1px solid #B6B6B6;
-                        border-radius: 18px;
-                        padding: 10px 45px 10px 20px;">
-                        <i class="fa fa-search icon" aria-hidden="true"></i>
-                    </div>
-                </div>
-               
-            </nav>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Basic Layout - 1</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.0.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container flex align-center gap-60">
+        <nav class="navbar flex align-center col-12">
+          <div class="logo col-2">
+            <a href="#" title="Home">
+            <img
+              src="./assets/images/logo.png"
+              alt="logo"
+              width="202"
+              height="54"
+            />
+            </a>
+          </div>
+
+          <ul
+            class="flex align-center justify-start gap-60 col-6 list-style-none"
+          >
+            <li>
+              <a href="#" title="Home" class="active txt-primary">Home</a>
+            </li>
+            <li>
+              <a href="#" title="Html" class="text-decoration-none">Html</a>
+            </li>
+            <li>
+              <a href="#" title="Css" class="text-decoration-none">Css</a>
+            </li>
+            <li>
+              <a href="#" title="Layout" class="text-decoration-none">Layout</a>
+            </li>
+            <li>
+              <a href="#" title="Bootstrap" class="text-decoration-none"
+                >Bootstrap</a
+              >
+            </li>
+          </ul>
+
+          <div class="search col-4 position-relative">
+            <input
+              type="text"
+              name="search"
+              class="input-search serach-button-border border-radius-18"
+              placeholder="Enter keyword, Item # or Part #"
+            />
+            <i class="fa fa-search position-absolute" aria-hidden="true"></i>
+          </div>
+        </nav>
+      </div>
     </header>
 
-    <section class="header-banner">
-        <div class="container">
-            <div class="d-flex">
-                <div class="col-1-1">
-                    <h2 class="main-heading">Lorem ipsum</h2>
-                    <p class="para">
-                        <b>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,</b> sed do eiusmod <sub>tempor incididunt</sub> ut labore <sup>et dolore</sup> magna<br>
-                         aliqua. <i>Ut enim ad minim veniam, quis nostrud exercitation ollamco laboris nisi ut aliquip ex ea commodo</i> <br>
-                         consequat. Duis aute irure dolor in <del>reprehenderit</del> in <u>voluptate velit</u> esse cillum dolore eu fugiat <small>nolla pariatur.</small> <br>
-                         Excepteur sint occaecat cupidatat non proident, sunt in colpa qui officia deserunt mollit anim id <mark style="background: #f34925;">est laborum.</mark>"
-                    </p>
-                </div>
+    <section class="banner">
+      <div class="banner-container">
+        <div class="flex justify-center">
+          <div class="col-1-1">
+            <h2 class="font-48 font-weight-700 txt-center mb-50">
+              Lorem ipsum
+            </h2>
+            <p class="font-20 line-height-40 txt-center">
+              <b>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,</b>
+              sed do eiusmod <sub>tempor incididunt</sub> ut labore
+              <sup>et dolore</sup> magna aliqua.
+              <i
+                >Ut enim ad minim veniam, quis nostrud exercitation ollamco
+                laboris nisi ut aliquip ex ea commodo</i
+              >
+              consequat. Duis aute irure dolor in <del>reprehenderit</del> in
+              <u>voluptate velit</u> esse cillum dolore eu fugiat
+              <small>nolla pariatur.</small> Excepteur sint occaecat cupidatat
+              non proident, sunt in colpa qui officia deserunt mollit anim id
+              <mark class="bg-secondary">est laborum.</mark>"
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="list-section">
+      <div class="list-container">
+          <h2 class="font-40 font-weight-700 txt-center mb-50">Lorem ipsum</h2>
+          <div class="main-list flex justify-center gap-58 flex-dir-col-md">
+            <div class="col-4">
+                <ul>
+                    <li class="list-heading">
+                      Lorem ipsum
+                      <ol class="list-style-number pt-19">
+                        <li class="txt-secondary font-weight-700 pb-40">
+                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                          sed diam nonummy nibh euismod
+                        </li>
+                        <li class="txt-secondary font-weight-700">
+                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                          sed diam nonummy nibh euismod
+                        </li>
+                      </ol>
+                    </li>
+                  </ul>
             </div>
-        </div>  
-    </section>
-
-    <section class="header-banner-2">
-        <div class="container">
-                <div class="col-1-1">
-                    <h2 class="main-heading-2">Lorem ipsum</h3>
-                    <div class="flex">
-                        <div class="new">
-                            <ul>
-                            <li class="inner-list">Lorem ipsum
-                                <ol type="1">
-                                    <li class="inner-list-1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,<br> sed diam nonummy nibh euismod </li>
-                                    <li class="inner-list-1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,<br> sed diam nonummy nibh euismod </li>
-                                </ol>
-                            </li>
-                            </ul>
-                        </div>
-                        <div class="new">
-                            <ul>
-                            <li class="inner-list">Lorem ipsum
-                                <ol type="A" style="font-style:italic;">
-                                    <li class="inner-list-1" style="font-style:italic;font-weight:400">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,<br> sed diam nonummy nibh euismod </li>
-                                    <li class="inner-list-1" style="font-style:italic;font-weight:400">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,<br> sed diam nonummy nibh euismod </li>
-                                </ol>
-                            </li>
-                            </ul>
-                        </div>
-                        <div class="new">
-                            <ul>
-                            <li class="inner-list">Lorem ipsum
-                                <ol type="I">
-                                    <li class="inner-list-1" style="color: #3092F9;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,<br> sed diam nonummy nibh euismod </li>
-                                    <li class="inner-list-1" style="color: #3092F9;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,<br> sed diam nonummy nibh euismod </li>
-                                </ol>
-                            </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-        </div>  
-    </section>
-
-    <section class="banner-img" style="margin-bottom: 70px;">
-        <div class="container">
-            <div class="d-flex">
-                <div class="col-1-1">
-                    <h2 class="main-heading-2">Lorem ipsum</h3>
-                    <div class="flex">
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="/assets/images/card-1.jpg" width="571" height="300" alt="img-card">
-                                </div>
-                                <div class="card-text-1" style="margin-bottom: -40px;">
-                                    <h3 class="inside-heading-card">Lorem ipsum</h3>
-                                    <p class="inside-para-card">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed<br> diam nonummy nibh euismod tincidunt utlaoreet dolore magna<br> aliquam erat volutpat.</p>
-                                    <p class="inside-para-card">sed diam nonummy nibh euismod tincidunt utlaoreet dolore<br> magna aliquam erat volutpat.</p>
-                                    <p style="color: red;text-decoration:underline;font-size: 20px;font-family: Arial;cursor: pointer;">View More</p>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="card-text" style="margin-top: -10px;">
-                                    <h3 class="inside-heading-card">Lorem ipsum</h3>
-                                    <p class="inside-para-card">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed<br> diam nonummy nibh euismod tincidunt utlaoreet dolore magna<br> aliquam erat volutpat.</p>
-                                    <p class="inside-para-card">sed diam nonummy nibh euismod tincidunt utlaoreet dolore<br> magna aliquam erat volutpat.</p>
-                                    <p style="color: red;text-decoration:underline;font-size: 20px;font-family: Arial;cursor: pointer;">View More</p>
-                                </div>
-                                <div class="card">
-                                    <img src="/assets/images/card-2.jpg" width="573" height="300" alt="img-card">
-                                </div>
-                            </div>
-                     </div>
-                </div>
+            <div class="col-4">
+                <ul>
+                    <li class="list-heading">
+                      Lorem ipsum
+                      <ol class="list-style-alphabatical pt-19">
+                        <li class="txt-secondary pb-40">
+                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                          sed diam nonummy nibh euismod
+                        </li>
+                        <li class="txt-secondary">
+                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                          sed diam nonummy nibh euismod
+                        </li>
+                      </ol>
+                    </li>
+                  </ul>
+            </div>
+            <div class="col-4">
+                <ul>
+                    <li class="list-heading">
+                      Lorem ipsum
+                      <ol class="list-style-roman pt-19">
+                        <li class="txt-blue pb-40">
+                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                          sed diam nonummy nibh euismod
+                        </li>
+                        <li class="txt-blue">
+                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                          sed diam nonummy nibh euismod
+                        </li>
+                      </ol>
+                    </li>
+                  </ul>
             </div>
         </div>
+      </div>
     </section>
 
-    <section class="footer">
-        <div class="container">
-            <div class="d-flex">
-                <div style="margin-top: -15px;">
-                    <h6 style="font-size: 20px;font-weight: 700;font-family: Arial;font-style: normal;text-align: center;">Radixweb</p>
-                    <p style="font-size:18px;font-weight:400;font-family:Arial;font-style:normal;color:#1D1D1D;text-align: center;">Ekyarth, B/H Nirma University, chharodi, Ahmedabad-382481, India.</p>    
-                </div>
-            </div>
+    <section class="img-text">
+      <div class="img-text-container">
+        <h2 class="font-40 txt-center mb-50 font-weight-700">Lorem ipsum</h2>
+        <div class="flex col-12">
+          <div class="col-6">
+            <img
+              src="./assets/images/card-1.jpg"
+              alt="img-1"
+              width="571"
+              height="300"
+            />
+          </div>
+          <div class="col-6">
+            <h3 class="font-32 font-weight-700 pb-19 ml-40">Lorem ipsum</h3>
+            <p class="font-18 line-height-30 pb-19 ml-40">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt utlaoreet dolore magna aliquam erat
+              volutpat.
+            </p>
+            <p class="font-18 line-height-30 pb-19 ml-40">
+              sed diam nonummy nibh euismod tincidunt utlaoreet dolore magna
+              aliquam erat volutpat.
+            </p>
+            <a href="#" title="view more" class="active txt-primary ml-40">View More</a>
+          </div>
         </div>
+        <div class="flex col-12">
+          <div class="col-6">
+            <h3 class="font-32 font-weight-700 pb-19">Lorem ipsum</h3>
+            <p class="font-18 line-height-30 pb-19">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt utlaoreet dolore magna aliquam erat
+              volutpat.
+            </p>
+            <p class="font-18 line-height-30 pb-19">
+              sed diam nonummy nibh euismod tincidunt utlaoreet dolore magna
+              aliquam erat volutpat.
+            </p>
+            <a href="#" title="view more" class="active txt-primary">View More</a>
+          </div>
+          <div class="col-6">
+            <img
+              src="./assets/images/card-2.jpg"
+              alt="img-1"
+              width="573"
+              height="300"
+            />
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- <script>
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar").style.top = "0";
-        } else {
-            document.getElementById("navbar").style.top = "-98px";
-        }
-        prevScrollpos = currentScrollPos;
-        }
-    </script> -->
-</body>
+    <footer class="bg-footer">
+      <div class="py-25">
+        <p class="font-weight-700 txt-center pb-19">Radixweb</p>
+        <p class="font-18 txt-center">
+          Ekyarth, B/H Nirma University, chharodi, Ahmedabad-382481, India.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
