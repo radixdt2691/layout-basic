@@ -58,8 +58,8 @@ table {
 
 @font-face {
     font-family: 'nunitosans-regular';
-    src: url('../fonts/nunitoSans-regular.woff') format('woff'),
-        url('../fonts/nunitoSans-regular.woff2') format('woff2');
+    src: url('../font/nunitoSans-regular.woff') format('woff'),
+        url('../font/nunitoSans-regular.woff2') format('woff2');
 }
 
 * {
@@ -284,7 +284,7 @@ header {
     font-size: 16px;
 }
 
-.search::placeholder {
+.search ::placeholder {
     font-family: 'nunitosans-regular';
     font-size: 16px;
     color: #9B9B9B;
