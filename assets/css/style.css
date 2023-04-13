@@ -117,10 +117,6 @@ body {
     color: #3092F9;
 }
 
-.bg-primary {
-    background: #F9F9F9;
-}
-
 .bg-secondary {
     background: #FF5151;
 }
@@ -165,7 +161,6 @@ body {
 /* img css */
 img {
     max-width: 100%;
-
 }
 
 /* Display */
@@ -285,7 +280,7 @@ header {
 }
 
 .search ::placeholder {
-    font-family: 'nunitosans-regular';
+    font-family: 'nunitosans-regular',sans-serif;
     font-size: 16px;
     color: #9B9B9B;
 }
